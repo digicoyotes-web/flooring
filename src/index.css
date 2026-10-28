@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fafbfc;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cinzel', serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-mono-accent {
+    font-family: 'Space Grotesk', monospace;
+  }
+}
+
+/* Custom Aqua Luxury Button Classes */
+.btn-aqua {
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #0e7490 100%);
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  box-shadow: 0 4px 14px 0 rgba(6, 182, 212, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn-aqua:hover {
+  background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 50%, #0891b2 100%);
+  box-shadow: 0 6px 20px 0 rgba(6, 182, 212, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-aqua:active {
+  transform: translateY(0);
+}
+
+.btn-aqua-outline {
+  border: 1.5px solid #06b6d4;
+  color: #0891b2;
+  background-color: rgba(6, 182, 212, 0.04);
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.btn-aqua-outline:hover {
+  background-color: #06b6d4;
+  color: #ffffff;
+  box-shadow: 0 4px 14px 0 rgba(6, 182, 212, 0.3);
+}
+
+/* Subtle architectural scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #06b6d4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0891b2;
+}
+
+/* Print styling */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .printable-quote {
+    box-shadow: none !important;
+    border: none !important;
+    color: #000 !important;
+    padding: 0 !important;
+  }
+}

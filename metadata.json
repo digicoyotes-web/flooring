@@ -1,0 +1,6 @@
+{
+  "name": "Atelier Floor & AI Showroom",
+  "description": "Luxury architectural flooring online showroom and autonomous AI agent suite for digital marketing, lead gen, SEO dominance, automated quotations, builder presentations, and global design intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
